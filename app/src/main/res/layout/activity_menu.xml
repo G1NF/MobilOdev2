@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MenuActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"
+        />
+
+
+    <Button
+        android:id="@+id/btn_email"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:background="@drawable/ic_email_black_24dp"
+        android:layout_marginEnd="@dimen/edit_user_view_margin_gl_menu"
+        android:layout_marginTop="@dimen/edit_user_view_margin_top_menu"
+        app:layout_constraintEnd_toStartOf="@id/gl_vertical"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send E-Mail"
+        app:layout_constraintStart_toStartOf="@id/btn_email"
+        app:layout_constraintEnd_toEndOf="@id/btn_email"
+        app:layout_constraintTop_toBottomOf="@id/btn_email" />
+
+
+    <Button
+        android:id="@+id/btn_list_users"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:background="@drawable/ic_list_user"
+        android:layout_marginStart="@dimen/edit_user_view_margin_gl_menu"
+        android:layout_marginTop="@dimen/edit_user_view_margin_top_menu"
+        app:layout_constraintStart_toEndOf="@id/gl_vertical"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List Users"
+        app:layout_constraintStart_toStartOf="@id/btn_list_users"
+        app:layout_constraintEnd_toEndOf="@id/btn_list_users"
+        app:layout_constraintTop_toBottomOf="@id/btn_list_users" />
+
+
+    <Button
+        android:id="@+id/btn_edit_user_info"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:background="@drawable/ic_edit_black_24dp"
+        android:layout_marginEnd="@dimen/edit_user_view_margin_gl_menu"
+        android:layout_marginTop="@dimen/edit_user_view_margin_top_menu"
+        app:layout_constraintEnd_toStartOf="@id/gl_vertical"
+        app:layout_constraintTop_toBottomOf="@id/btn_email" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Profile"
+        app:layout_constraintStart_toStartOf="@id/btn_edit_user_info"
+        app:layout_constraintEnd_toEndOf="@id/btn_edit_user_info"
+        app:layout_constraintTop_toBottomOf="@id/btn_edit_user_info" />
+
+
+    <Button
+        android:id="@+id/btn_notebook"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:background="@drawable/ic_insert_drive_file_black_24dp"
+        android:layout_marginStart="@dimen/edit_user_view_margin_gl_menu"
+        android:layout_marginTop="@dimen/edit_user_view_margin_top_menu"
+        app:layout_constraintStart_toEndOf="@id/gl_vertical"
+        app:layout_constraintTop_toBottomOf="@id/btn_list_users" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NotePad"
+        app:layout_constraintStart_toStartOf="@id/btn_notebook"
+        app:layout_constraintEnd_toEndOf="@id/btn_notebook"
+        app:layout_constraintTop_toBottomOf="@id/btn_notebook" />
+
+
+    <Button
+        android:id="@+id/btn_sensor"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:background="@drawable/ic_wifi_tethering_black_24dp"
+        android:layout_marginTop="@dimen/edit_user_view_margin_top_menu"
+        app:layout_constraintStart_toStartOf="@id/gl_vertical"
+        app:layout_constraintEnd_toEndOf="@id/gl_vertical"
+        app:layout_constraintTop_toBottomOf="@id/btn_notebook" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sensors"
+        app:layout_constraintStart_toStartOf="@id/btn_sensor"
+        app:layout_constraintEnd_toEndOf="@id/btn_sensor"
+        app:layout_constraintTop_toBottomOf="@id/btn_sensor" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
